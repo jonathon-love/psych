@@ -1,0 +1,48 @@
+title: Omega Estimates
+name: jmvOmega
+jus: '2.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Variables
+        children:
+          - type: VariablesListBox
+            name: vars
+            isTarget: true
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: TextBox
+        name: nfactors
+        format: number
+        inputPattern: '[0-9]+'
+      - type: ComboBox
+        name: fm
+      - type: TextBox
+        name: n_iter
+        format: number
+        inputPattern: '[0-9]+'
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: ComboBox
+        name: corrMethod
+      - type: CheckBox
+        name: flip
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: TextBox
+        name: p
+        format: number
+        inputPattern: '[0-9]+'
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: CheckBox
+        name: plot

@@ -1,0 +1,66 @@
+---
+name:  jmvAlpha
+title: Alpha
+jrs:   '1.1'
+
+items:
+    
+    - name: main
+      title: Alpha
+      type: Table
+      rows: 1
+      columns:
+        - name: raw_alpha
+          title: α
+        - name: std_alpha
+          title: Std α
+        - name: g6
+          title: G6 (smc)
+        - name: average_r
+          title: Average R
+        - name: sn
+          title: S/N
+        - name: se
+          title: SE α
+        - name: cil
+          title: Lower
+          superTitle: 95% Confidence Interval
+        - name: ciu
+          title: Upper
+          superTitle: 95% Confidence Interval
+    
+    - name: dropped
+      title: Reliability if an item is dropped
+      type: Table
+      rows: (vars)
+      columns:
+        - name: var
+          title: ''
+          content: ($key)
+        - name: raw_alpha
+          title: α
+        - name: std_alpha
+          title: Std α
+        - name: g6
+          title: G6 (smc)
+        - name: average_r
+          title: Average R
+        - name: sn
+          title: S/N
+          
+    - name: items
+      title: Item statistics
+      type: Table
+      rows: (vars)
+      columns:
+        - name: var
+          title: ''
+          content: ($key)
+        - name: r
+          title: r
+        - name: rcor
+          title: r cor
+        - name: rdrop
+          title: r drop
+
+...

@@ -1,0 +1,66 @@
+---
+name:  jmvOmega
+title: Omega
+menuGroup: psych
+version: '1.0.0'
+jas: '1.1'
+
+options:
+    - name: data
+      type: Data
+
+    - name: vars
+      title: Variables
+      type: Variables
+    
+    - name: nfactors
+      title: Number of factors
+      type: Integer
+      default: 3
+      min: 1
+    
+    - name: n_iter
+      title: Replications
+      type: Integer
+      default: 1
+      min: 1
+      
+    - name: fm
+      title: Factor method
+      type: List
+      options:
+        - title: Principal axes
+          name:  pa
+        - title: Minimum residual
+          name:  minres
+        - title: Maximum likelihood
+          name:  ml
+      default: minres
+    
+    - name: flip
+      title: Flip negative correlations
+      type: Bool
+      default: TRUE
+    
+    - name: p
+      title: Conference bounds probability
+      type: Number
+      min: 0
+      max: 1
+      default: 0.05
+    
+    - name: corrMethod
+      title: Correlation method
+      type: List
+      options:
+        - title: Pearson
+          name:  pear
+        - title: Polychoric / Tetrachoric
+          name:  poly
+      default: pear
+
+    - name: plot
+      title: Plot
+      type: Bool
+      default: false
+...

@@ -422,5 +422,7 @@ Yule2phi,
 Yule2phi.matrix,
 Yule2poly,
 Yule2poly.matrix,
-Yule2tetra
+Yule2tetra,
+jmvAlpha,
+jmvOmega
 )

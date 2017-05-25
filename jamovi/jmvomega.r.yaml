@@ -1,0 +1,19 @@
+---
+name:  jmvOmega
+title: Omega
+jrs:   '1.1'
+
+items:
+    - name:  omega
+      title: Omega Estimates
+      type:  Preformatted
+      
+    - name: plot
+      title: Plot
+      type: Image
+      visible: (plot)
+      width: 400
+      height: 300
+      renderFun: .plot
+
+...
